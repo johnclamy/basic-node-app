@@ -1,0 +1,32 @@
+{
+  "name": "next12-events-app",
+  "version": "1.0.0",
+  "description": "Nextjs 12 events app",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnclamy/nextjs12-events-app.git"
+  },
+  "keywords": [
+    "Next.js-12",
+    "web-app",
+    "react18"
+  ],
+  "author": "John Lamy <johnclamy@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/johnclamy/nextjs12-events-app/issues"
+  },
+  "homepage": "https://github.com/johnclamy/nextjs12-events-app#readme",
+  "dependencies": {
+    "next": "^12.3.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}

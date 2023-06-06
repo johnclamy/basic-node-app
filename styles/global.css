@@ -21,15 +21,20 @@ body {
   box-sizing: border-box;
 }
 
-a {
+a,
+a:link,
+a:visited {
   color: var(--darker);
   text-decoration: none;
-}
-
-a:hover {
   border-bottom-style: solid;
   border-bottom-color: var(--accent);
   border-bottom-width: thick;
+}
+
+a:hover {
+  color: var(--dark);
+  background-color: var(--accent);
+  border-bottom: none;
 }
 
 img {

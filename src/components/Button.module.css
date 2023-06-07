@@ -8,9 +8,13 @@
 
 .primary {
   color: var(--lighter);
-  background-color: var(--dark);
+  text-transform: capitalize;
+  font-size: 1rem;
+  background-color: var(--darker);
+  padding: 0.5rem 1.25rem;
 }
 
 .primary:hover {
-  opacity: 0.75;
+  background-color: rgba(0, 0, 0, 0.65);
+  color: white;
 }

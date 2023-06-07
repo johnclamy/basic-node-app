@@ -1,0 +1,43 @@
+.navbar-wrapper {
+  background-color: var(--light);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+
+.bar {
+  display: block;
+  width: 35px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--darker);
+}
+
+.nav-links {
+  display: none;
+}
+
+.nav-link {
+  text-transform: uppercase;
+  margin-left: 1rem;
+}
+
+.hamburger {
+  display: block;
+}
+
+@media (min-width: 550px) {
+  .hamburger {
+    display: none;
+  }
+
+  .nav-links {
+    display: block;
+  }
+}

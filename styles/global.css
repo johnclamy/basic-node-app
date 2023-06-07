@@ -26,15 +26,11 @@ a:link,
 a:visited {
   color: var(--darker);
   text-decoration: none;
-  border-bottom-style: solid;
-  border-bottom-color: var(--accent);
-  border-bottom-width: thick;
 }
 
 a:hover {
   color: var(--dark);
-  background-color: var(--accent);
-  border-bottom: none;
+  opacity: 0.9;
 }
 
 img {

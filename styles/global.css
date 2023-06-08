@@ -9,6 +9,7 @@ body {
 
   padding: 0;
   margin: 0;
+  outline: none;
   color: var(--dark);
   background-color: var(--lighter);
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,

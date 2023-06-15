@@ -3,11 +3,9 @@ import routes from '../routes'
 import styles from './Logo.module.css'
 
 export default function Logo() {
-  return (
-    <b className={styles.logo}>
-      <Link href={routes[0].route}>
-        🎟️ tech events
-      </Link>
-    </b>
+  return (    
+    <Link href={routes[0].route}>
+      <a className={styles.logo}>🎟️ tech events</a>
+    </Link>
   );
 }

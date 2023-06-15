@@ -1,43 +1,13 @@
-.navbar-wrapper {
-  background-color: var(--light);
-}
-
 .navbar {
+  height: 3.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 1.5rem;
-}
-
-.bar {
-  display: block;
-  width: 35px;
-  height: 3px;
-  margin: 5px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  background-color: var(--darker);
-}
-
-.nav-links {
-  display: none;
-}
-
-.nav-link {
-  text-transform: uppercase;
-  margin-left: 1rem;
+  background-color: var(--light);
+  border-bottom: 0.16rem solid var(--accent);
 }
 
 .hamburger {
-  display: block;
-}
-
-@media (min-width: 550px) {
-  .hamburger {
-    display: none;
-  }
-
-  .nav-links {
-    display: block;
-  }
+  cursor: pointer;
+  margin-right: 1rem;
 }

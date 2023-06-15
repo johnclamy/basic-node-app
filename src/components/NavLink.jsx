@@ -1,11 +1,10 @@
 import Link from 'next/link'
+import styles from './NavLink.module.css'
 
-export default function NavLink({ label, route, isActive }) {
+export default function NavLink({ navLink }) {
   return (
-    <Link href={route}>
-      <a className={`nav-link ${isActive ? 'active' : ''}`}>
-        {label}
-      </a>
+    <Link href={navLink.route}>
+      <a className={styles['nav-link']}>{navLink.name}</a>
     </Link>
   )
 }

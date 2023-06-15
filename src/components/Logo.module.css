@@ -1,7 +1,7 @@
-.logo-label {
+.logo {
   text-transform: capitalize;
-  font-size: 1.1rem;
   font-weight: 300;
-  letter-spacing: 0.12rem;
-  word-spacing: 0.04rem;
+  font-size: 1.1rem;
+  letter-spacing: 0.06rem;
+  color: var(--darker);
 }

@@ -1,0 +1,40 @@
+.title {
+  padding: 0.25rem 2rem;
+  color: var(--dark);
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.title em {
+  color: var(--accent);
+  font-weight: 700;
+  font-style: normal;
+}
+
+.title,
+.subtitle {
+  text-align: center;
+}
+
+.events-img {
+  margin: 2.5rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.category-info {
+  margin-bottom: 2rem;
+}
+
+.category-info h2,
+.category-info p {
+  margin: 0;
+}
+
+.category-info h2 {
+  margin-bottom: 0.25rem;
+  font-weight: 400;
+  font-size: 1.3rem;
+  word-spacing: 0.085rem;
+  letter-spacing: 0.032rem;
+}

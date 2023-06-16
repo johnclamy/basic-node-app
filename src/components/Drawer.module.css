@@ -1,0 +1,51 @@
+.drawer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--dark);
+  z-index: 10;
+}
+
+.drawer a,
+.drawer a:link,
+.drawer a:visited {
+  color: white;
+}
+
+.drawer-links {
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.drawer-item {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.close-btn-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 1.5rem;
+  position: absolute;
+}
+
+.close-btn {
+  color: white;
+  cursor: pointer;
+}
+
+/* Media queries */
+
+@media (min-width: 768px) {
+  .drawer {
+    display: none;
+  }
+}

@@ -38,3 +38,10 @@
   word-spacing: 0.085rem;
   letter-spacing: 0.032rem;
 }
+
+.title-underline {
+  width: 60%;
+  border-bottom: 2px solid var(--accent);
+  margin-top: -0.5rem;
+  margin-bottom: 0.5rem;
+}

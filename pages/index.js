@@ -35,6 +35,7 @@ export default function Home({ categories }) {
               <Image src={image} alt={title} width={640} height={426} />
               <div className={styles['category-info']}>
                 <h2>{title}</h2>
+                <div className={styles['title-underline']}></div>
                 <p>{description}</p>
               </div>
             </a>

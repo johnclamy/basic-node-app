@@ -1,0 +1,42 @@
+.footer-container {
+  background-color: var(--dark);
+  font-size: 0.75rem;
+  color: white;
+  padding-bottom: 2rem;
+}
+
+.footer-container a,
+.footer-container a:link,
+.footer-container a:visited {
+  color: white;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.wrapper {
+  margin: 0.5rem 0.25rem;
+}
+
+.footer-top {
+  padding: 0.5rem 0 1rem 0;
+}
+
+.unsplashed-container,
+.pixabay-container {
+  margin: 1rem 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+}
+
+.tools,
+.flaticon-credits {
+  text-align: center;
+}
+
+.footer-nav {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-evenly;
+}

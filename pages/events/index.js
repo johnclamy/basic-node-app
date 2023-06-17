@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import styles from "../../styles/Events.module.css";
 
 const events = [
   {
@@ -21,13 +22,13 @@ const events = [
 
 export default function Events() {
   return (
-    <main>
+    <>
       <header>
-        <h1>events</h1>
+        <h1 className={styles.title}>events</h1>
       </header>
       <ul>
         {events.map(({ imgFileName, location, slogan }) => (
-          <li key={location}>
+          <li key={location} className={styles["category-item"]}>
             <Link href={`/events/${location.toLowerCase()}`}>
               <a>
                 <figure>
@@ -36,10 +37,11 @@ export default function Events() {
                     height={150}
                     alt={`Events in ${location}`}
                     src={`/imgs/${imgFileName}`}
+                    className={styles.image}
                   />
                   <figcaption>
-                    <h3>{location}</h3>
-                    <p>{slogan}</p>
+                    <h3 className={styles["category-title"]}>{location}</h3>
+                    <p className={styles.text}>{slogan}</p>
                   </figcaption>
                 </figure>
               </a>
@@ -47,6 +49,6 @@ export default function Events() {
           </li>
         ))}
       </ul>
-    </main>
+    </>
   );
 }

@@ -1,0 +1,28 @@
+.title {
+  text-transform: capitalize;
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+  font-weight: 300;
+}
+
+.image {
+  border-radius: 0.5rem;
+}
+
+.category-item {
+  margin-bottom: 2.5rem;
+}
+
+.category-title {
+  margin: 0;
+  color: var(--darker);
+  font-weight: 600;
+  letter-spacing: 0.08rem;
+}
+
+.text {
+  line-height: 1.2;
+  margin: 0;
+  font-size: 0.8rem;
+  padding-right: 2rem;
+}

@@ -1,20 +1,32 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import path from '../../../data/index.json'
+import styles from '../../../styles/CityEvents.module.css'
 
 export default function EventCategory({ data, city }) {
   return (
-    <article>
+    <article className={styles["article-container"]}>
       <header>
-        <h1>Events in {city}</h1>
+        <h1 className={styles.title}>
+          Events in <b className={styles.city}>{city}</b>
+        </h1>
       </header>
-      <section>
-        {data.map(event => (
-          <Link key={event.id} href={`/events/${event.city}/${event.id}`} passHref>
+      <section className={styles.article}>
+        {data.map((event) => (
+          <Link
+            key={event.id}
+            href={`/events/${event.city}/${event.id}`}
+            passHref
+          >
             <a>
-              <Image width={300} height={300} alt={event.title} src={event.image} />
-              <h2>{event.title}</h2>
-              <p>{event.description}</p>
+              <Image
+                width={300}
+                height={300}
+                alt={event.title}
+                src={event.image}
+              />
+              <h2 className={styles["city-title"]}>{event.title}</h2>
+              <p className={styles.text}>{event.description}</p>
             </a>
           </Link>
         ))}

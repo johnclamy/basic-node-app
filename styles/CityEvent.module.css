@@ -1,0 +1,31 @@
+.title {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  font-weight: 300;
+}
+
+.text {
+  margin-top: 0.25rem;
+}
+
+.label {
+  word-spacing: 0.08rem;
+  letter-spacing: 0.04rem;
+}
+
+.register {
+  margin: 1.5rem 0 2rem 0;
+  background-color: var(--light);
+  padding: 1rem;
+}
+
+.form {
+  margin-top: 1rem;
+}
+
+.input-form {
+  margin-right: 0.75rem;
+  border: 1px solid var(--dark);
+  border-radius: 0.45rem;
+  padding: 0.675rem 0.4rem;
+}

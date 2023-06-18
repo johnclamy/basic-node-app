@@ -2,6 +2,8 @@ import { useRef, useState } from 'react';
 import { useRouter } from "next/router";
 import Image from "next/image";
 import path from "../../../data/index.json";
+import Button from "../../../src/components/Button";
+import styles from "../../../styles/CityEvent.module.css";
 
 export default function Event({ currentEvent }) {
   const emailInput = useRef()
@@ -41,9 +43,9 @@ export default function Event({ currentEvent }) {
   }
 
   return (
-    <main>
+    <>
       <header>
-        <h1>{currentEvent.title}</h1>
+        <h1 className={styles.title}>{currentEvent.title}</h1>
       </header>
       <section>
         <Image
@@ -52,21 +54,28 @@ export default function Event({ currentEvent }) {
           height={600}
           alt={currentEvent.title}
         />
-        <p>{currentEvent.description}</p>
+        <p className={styles.text}>{currentEvent.description}</p>
       </section>
-      <section>
+      <section className={styles.register}>
         <form onSubmit={handleSubmit}>
-          <label>Get Registered for this event!</label>
-          <input
-            ref={emailInput}
-            type="email"
-            id="email"
-            placeholder="Please insert your email here"
-          />
+          <label className={styles.label}>Get Registered for this event!</label>
+          <div className={styles.form}>
+            <input
+              ref={emailInput}
+              type="email"
+              id="email"
+              placeholder="Please insert your email here"
+              className={styles["input-form"]}
+            />
+            <Button
+              type="submit"
+              onClick={() => console.log("btn submitted...")}
+            />
+          </div>
         </form>
         <p>{message}</p>
       </section>
-    </main>
+    </>
   );
 }
 

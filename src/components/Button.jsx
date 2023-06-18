@@ -4,9 +4,11 @@ export default function Button({
   handleClick = () => { },
   type = 'button',
   variant = 'primary',
-  label = 'submit'
+  label = 'Submit'
 }) {
   return (
-    <button type={type} onClick={handleClick} className={styles[variant]}>{label}</button>
+    <button type={type} onClick={handleClick} className={`${styles.btn} ${styles[variant]}`}>
+      {label}
+    </button>
   )
 }

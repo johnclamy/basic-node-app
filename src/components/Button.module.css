@@ -1,8 +1,8 @@
 .btn {
-  width: 10rem;
-  height: 3.5rem;
-  padding: 2.5rem 4rem;
-  border-radius: 1.5rem;
+  width: auto;
+  height: 2.5rem;
+  padding: 0.5rem 1.25rem;
+  border-radius: 0.5rem;
   border: none;
 }
 
@@ -11,10 +11,9 @@
   text-transform: capitalize;
   font-size: 1rem;
   background-color: var(--darker);
-  padding: 0.5rem 1.25rem;
 }
 
 .primary:hover {
-  background-color: rgba(0, 0, 0, 0.65);
-  color: white;
+  background-color: white;
+  color: var(--dark);
 }

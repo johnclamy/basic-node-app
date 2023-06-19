@@ -29,7 +29,7 @@ export default function Events() {
       <ul>
         {events.map(({ imgFileName, location, slogan }) => (
           <li key={location} className={styles["category-item"]}>
-            <Link href={`/events/${location.toLowerCase()}`}>
+            <Link href={`/events/${location.toLowerCase()}`} passHref>
               <a>
                 <figure>
                   <Image

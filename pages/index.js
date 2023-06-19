@@ -30,12 +30,12 @@ export default function Home({ categories }) {
       <hr />
       <section>
         {categories.map(({ id, title, description, image }) => (
-          <Link key={id} href={`/events/${id}`}>
+          <Link key={id} href={`/events/${id}`} passHref>
             <a>
               <Image src={image} alt={title} width={640} height={426} />
-              <div className={styles['category-info']}>
+              <div className={styles["category-info"]}>
                 <h2>{title}</h2>
-                <div className={styles['title-underline']}></div>
+                <div className={styles["title-underline"]}></div>
                 <p>{description}</p>
               </div>
             </a>

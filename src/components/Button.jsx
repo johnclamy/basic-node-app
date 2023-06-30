@@ -1,14 +1,18 @@
 import styles from './Button.module.css';
 
 export default function Button({
-  handleClick = () => { },
-  type = 'button',
-  variant = 'primary',
-  label = 'Submit'
+  type = "submit",
+  variant = "primary",
+  label = "Submit",
+  // handleClick = () => {},
 }) {
   return (
-    <button type={type} onClick={handleClick} className={`${styles.btn} ${styles[variant]}`}>
+    <button
+      type={type}
+      // onClick={handleClick}
+      className={`${styles.btn} ${styles[variant]}`}
+    >
       {label}
     </button>
-  )
+  );
 }

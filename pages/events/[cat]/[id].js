@@ -22,7 +22,7 @@ export default function Event({ currentEvent }) {
     }
 
     try {
-      const rslt = await fetch('/api/email-registration', {
+      const response  = await fetch('/api/email-registration', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -30,13 +30,19 @@ export default function Event({ currentEvent }) {
         body: JSON.stringify({ email: emailValue, eventId }),
       })
 
-      if (!rslt.ok) {
-        throw new Error(`Error: ${rslt.status}`)
+      console.log(response);
+
+      if (!response.ok) {
+        throw new Error(
+          `Error: ${response.status} and this is where we are...`
+        );
       }
 
-      const data = await rslt.json()
+      const data = await response.json();
+      console.log(data)
       setMessage(data.message)
       emailInput.current.value = ""
+
     } catch (err) {
       console.error('ERROR: ', err)
     }
@@ -67,10 +73,7 @@ export default function Event({ currentEvent }) {
               placeholder="Please insert your email here"
               className={styles["input-form"]}
             />
-            <Button
-              type="submit"
-              onClick={() => console.log("btn submitted...")}
-            />
+            <Button type="submit" />
           </div>
         </form>
         <p>{message}</p>

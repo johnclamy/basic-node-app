@@ -30,8 +30,6 @@ export default function Event({ currentEvent }) {
         body: JSON.stringify({ email: emailValue, eventId }),
       })
 
-      console.log(response);
-
       if (!response.ok) {
         throw new Error(
           `Error: ${response.status} and this is where we are...`
@@ -39,7 +37,6 @@ export default function Event({ currentEvent }) {
       }
 
       const data = await response.json();
-      console.log(data)
       setMessage(data.message)
       emailInput.current.value = ""
 
@@ -63,19 +60,23 @@ export default function Event({ currentEvent }) {
         <p className={styles.text}>{currentEvent.description}</p>
       </section>
       <section className={styles.register}>
-        <form onSubmit={handleSubmit}>
-          <label className={styles.label}>Get Registered for this event!</label>
-          <div className={styles.form}>
-            <input
-              ref={emailInput}
-              type="email"
-              id="email"
-              placeholder="Please insert your email here"
-              className={styles["input-form"]}
-            />
-            <Button type="submit" />
-          </div>
-        </form>
+        <div className={styles['form-container']}>
+          <form onSubmit={handleSubmit}>
+            <label className={styles.label}>
+              Get Registered for this event!
+            </label>
+            <div className={styles.form}>
+              <input
+                ref={emailInput}
+                type="email"
+                id="email"
+                placeholder="Please insert your email here"
+                className={styles["input-form"]}
+              />
+              <Button type="submit" />
+            </div>
+          </form>
+        </div>
         <p>{message}</p>
       </section>
     </>

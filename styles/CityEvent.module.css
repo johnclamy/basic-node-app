@@ -14,9 +14,13 @@
 }
 
 .register {
-  margin: 1.5rem 0 2rem 0;
   background-color: var(--light);
   padding: 1rem;
+}
+
+.form-container {
+  max-width: 300px;
+  margin: 0 auto;
 }
 
 .form {

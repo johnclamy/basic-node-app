@@ -82,7 +82,7 @@ export default function Footer() {
           <nav className={styles["footer-nav"]}>
             <Link href="/">Home</Link>
             <Link href="/events">Events</Link>
-            <Link href="/about">About</Link>
+            <Link href="/about-us">About</Link>
           </nav>
         </section>{" "}
       </div>{" "}

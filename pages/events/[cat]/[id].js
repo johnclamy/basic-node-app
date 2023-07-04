@@ -70,7 +70,7 @@ export default function Event({ currentEvent }) {
                 ref={emailInput}
                 type="email"
                 id="email"
-                placeholder="Please insert your email here"
+                placeholder="Please insert your email..."
                 className={styles["input-form"]}
               />
               <Button type="submit" />

@@ -34,10 +34,10 @@ export default function Home({ categories }) {
         </figure>
       </header>
       <hr />
-      <section>
+      <section className={styles['event-data']}>
         {categories.map(({ id, title, description, image }) => (
           <Link key={id} href={`/events/${id}`} passHref>
-            <a>
+            <a className={styles.content}>
               <div className={styles.image}>
                 <Image src={image} alt={title} width={640} height={426} />
               </div>

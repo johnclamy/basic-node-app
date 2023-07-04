@@ -8,28 +8,30 @@
   margin-top: 0.25rem;
 }
 
-.label {
-  word-spacing: 0.08rem;
-  letter-spacing: 0.04rem;
-}
-
 .register {
   background-color: var(--light);
-  padding: 1rem;
 }
 
 .form-container {
-  max-width: 300px;
-  margin: 0 auto;
+  padding: 1.5rem 0 2rem 1rem;
 }
 
-.form {
-  margin-top: 1rem;
+.label {
+  word-spacing: 0.08rem;
+  letter-spacing: 0.04rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.form-widget {
+  margin-top: 0.75rem;
 }
 
 .input-form {
-  margin-right: 0.75rem;
+  width: 63%;
+  font-size: 0.95rem;
+  margin-right: 0.5rem;
   border: 1px solid var(--dark);
   border-radius: 0.45rem;
-  padding: 0.675rem 0.4rem;
+  padding: 0.7rem 0 0.7rem 0.5rem;
 }

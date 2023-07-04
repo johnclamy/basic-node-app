@@ -24,7 +24,13 @@ export default function Home({ categories }) {
           </p>
         </div>
         <figure className={styles["events-img"]}>
-          <Image src="/imgs/hero.png" alt="events" width={165} height={165} />
+          <Image
+            className={styles["hero-image"]}
+            src="/imgs/hero.png"
+            alt="events"
+            width={200}
+            height={200}
+          />
         </figure>
       </header>
       <hr />

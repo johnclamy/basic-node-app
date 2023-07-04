@@ -101,7 +101,6 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps(context) {
-  console.log('deep context: ', context)
   const id = context.params.id
   const { allEvents } = await path;
   const currentEvent = allEvents.find(event => id === event.id)

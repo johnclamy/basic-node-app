@@ -40,3 +40,18 @@
   display: flex;
   justify-content: space-evenly;
 }
+
+/* Media Queries */
+
+@media (min-width: 769px) {
+  .site-pictures {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .unsplashed-container,
+  .pixabay-container {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+  }
+}

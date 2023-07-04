@@ -61,11 +61,11 @@ export default function Event({ currentEvent }) {
       </section>
       <section className={styles.register}>
         <div className={styles['form-container']}>
-          <form onSubmit={handleSubmit}>
+          <form className={styles.form} onSubmit={handleSubmit}>
             <label className={styles.label}>
               Get Registered for this event!
             </label>
-            <div className={styles.form}>
+            <div className={styles['form-widget']}>
               <input
                 ref={emailInput}
                 type="email"

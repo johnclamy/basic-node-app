@@ -12,7 +12,7 @@ export default function Footer() {
             Website built with <a href="https://nextjs.org/">Next.js</a> and
             hosted on <a href="https://vercel.com/">Vercel</a>.
           </p>
-          <section className={styles['site-pictures']}>
+          <section className={styles["site-pictures"]}>
             <div className={styles["unsplashed-container"]}>
               {/* unsplash photo credits section */}
               <img
@@ -54,9 +54,9 @@ export default function Footer() {
                 width={45}
                 height={45}
               />
-              <div>
+              <div className={styles.pixabay}>
                 <p>
-                  Image by{" "}
+                  Free image provided by{" "}
                   <a href="https://pixabay.com/users/clker-free-vector-images-3736/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=303341">
                     Clker-Free-Vector-Images
                   </a>{" "}

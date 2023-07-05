@@ -5,12 +5,16 @@
   font-weight: 300;
 }
 
-.image {
-  border-radius: 0.5rem;
+.container {
+  padding-left: 0;
 }
 
-.category-item {
+.event {
   margin-bottom: 2.5rem;
+}
+
+.image {
+  border-radius: 0.5rem;
 }
 
 .category-title {
@@ -25,4 +29,40 @@
   margin: 0;
   font-size: 0.8rem;
   padding-right: 2rem;
+}
+
+/* Media Queries */
+
+@media (min-width: 425px) {
+  .event {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.8rem;
+  }
+
+  .figure {
+    margin-left: 0.5rem;
+    margin-right: 1rem;
+  }
+
+  .category-title {
+    font-size: 1.5rem;
+  }
+
+  .text {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    min-width: 768px;
+    margin: 0 auto;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }

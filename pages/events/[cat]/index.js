@@ -52,7 +52,6 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps(context) {
-  console.log('context:', context)
   const city = context?.params.cat
   const { allEvents } = await path;
   const data = allEvents.filter(event => event.city === city)

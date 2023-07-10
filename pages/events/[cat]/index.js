@@ -21,8 +21,8 @@ export default function EventCategory({ data, city }) {
             >
               <a>
                 <Image
-                  width={300}
-                  height={300}
+                  width={600}
+                  height={600}
                   alt={event.title}
                   src={event.image}
                 />

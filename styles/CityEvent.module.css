@@ -44,6 +44,11 @@
     max-width: 1025px;
     margin: 0 auto;
   }
+
+  .form {
+    max-width: 482px;
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: 620px) {

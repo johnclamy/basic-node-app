@@ -46,11 +46,11 @@ export default function Event({ currentEvent }) {
   }
 
   return (
-    <>
+    <div className={styles.wrapper}>
       <header>
         <h1 className={styles.title}>{currentEvent.title}</h1>
       </header>
-      <section>
+      <section className={styles['event-content']}>
         <Image
           src={currentEvent.image}
           width={600}
@@ -79,7 +79,7 @@ export default function Event({ currentEvent }) {
         </div>
         <p>{message}</p>
       </section>
-    </>
+    </div>
   );
 }
 

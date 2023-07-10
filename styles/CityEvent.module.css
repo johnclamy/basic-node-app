@@ -36,3 +36,20 @@
   border-radius: 0.45rem;
   padding: 0.68rem 0 0.68rem 0.5rem;
 }
+
+/* Media Queries */
+
+@media (min-width: 425px) {
+  .wrapper {
+    max-width: 1025px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 620px) {
+  .event-content {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+}
